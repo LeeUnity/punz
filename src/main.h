@@ -35,8 +35,8 @@ static const unsigned int MAX_ORPHAN_TRANSACTIONS = MAX_BLOCK_SIZE/100;
 static const unsigned int MAX_INV_SZ = 50000;
 static const int64_t MIN_TX_FEE = 10000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
-static const int64_t MAX_MONEY = 15000000 * COIN;
-static const int64_t COIN_YEAR_REWARD = 365 * CENT; // 1% per year
+static const int64_t MAX_MONEY = 200000000000 * COIN;
+static const int64_t COIN_YEAR_REWARD = 365 * CENT; // 1% per day
 static const unsigned int FORK_TIME = 1464880583; //  Sun, 03 Apr 2016 15:00:00 GMT 
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
